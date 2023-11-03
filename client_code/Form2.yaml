@@ -1,0 +1,40 @@
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: " ENTRANCE EXAM FOR MCA 2023\n        MICHAEL'S UNIVERSITY",
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '#f0e02d', bold: false, underline: false, icon: 'fa:university'}
+    name: label_1
+    layout_properties: {grid_position: 'MZIPUG,VMLZBE'}
+  - type: GridPanel
+    properties: {}
+    name: grid_panel_1
+    layout_properties: {grid_position: 'JQSBCK,WBUMZE'}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:On
+          Background', visible: true, text: "                 ::INSTRUCTION::\n------------------------------------------------\n\
+          1.Total Quizz Time is:05:00 Min\n2.Total Questions:05\n3.Total Score:05\
+          \ x 100 = 500\n4.Please select appropriate option at once as you have only\
+          \ one chance to select\n                          Good Luck!", font_size: 20,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      name: label_2
+      layout_properties: {row: JEDPKF, width_xs: 8, col_xs: 2, width: 349.328}
+  - type: Button
+    properties: {role: filled, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Start, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_1
+    layout_properties: {grid_position: 'AAXXKN,FMDRQV'}
+    event_bindings: {click: button_1_click}
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: 'theme:Primary Container',
+    border: '', visible: true, role: null, html: '@theme:standard-page.html'}
