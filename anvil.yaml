@@ -16,7 +16,7 @@ native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=E
 db_schema:
   responses:
     title: responses
-    client: none
+    client: full
     server: full
     columns:
     - name: Question_number
