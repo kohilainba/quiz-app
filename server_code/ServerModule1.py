@@ -36,6 +36,43 @@ class QuizAppServerModule:
 
     def __init__(self):
         self.user_responses = []
+    @anvil.server.callable
+    def get_quiz_question(self, question_number):
+        # Get the quiz question based on the question number
+        if 1 <= question_number <= len(self.questions):
+            return self.questions[question_number - 1]
+        else:
+            return None
+
+    @anvil.server.callable
+    def save_user_response(self, question_number, selected_option):
+        # Save the user's response
+        if 1 <= question_number <= len(self.questions):
+            question = self.questions[question_number - 1]
+            self.user_responses.append({'question_text': question['question_text'],
+                                        'selected_option': selected_option,
+                                        'correct_answer': question['correct_answer']})
+
+    @anvil.server.callable
+    def get_user_responses(self):
+        # Get user responses for admin
+        return self.user_responses
+
+    @anvil.server.callable
+    def clear_user_responses(self):
+        # Clear user responses for the next quiz attempt
+        self.user_responses = []
+    @anvil.server.callable
+    def send_completion_email(self, user_email):
+        # Send completion email to the user
+        anvil.email.send(
+            to=user_email,
+            subject='Quiz Completed',
+            text='Congratulations! You have completed the quiz.'
+        )
+
+    
+
 
 
 # This is a server module. It runs on the Anvil server,

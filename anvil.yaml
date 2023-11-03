@@ -1,3 +1,4 @@
+correct_dependency_ids: {}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
@@ -22,6 +23,9 @@ db_schema:
       admin_ui: {width: 200}
       type: string
     - name: Selected_option
+      admin_ui: {width: 200}
+      type: string
+    - name: time_taken
       admin_ui: {width: 200}
       type: string
 renamed: true

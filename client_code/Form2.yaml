@@ -5,7 +5,7 @@ components:
   layout_properties: {slot: default}
   components:
   - type: Label
-    properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
       visible: true, text: " ENTRANCE EXAM FOR MCA 2023\n        MICHAEL'S UNIVERSITY",
       font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '#f0e02d', bold: false, underline: false, icon: 'fa:university'}
