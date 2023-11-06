@@ -25,3 +25,6 @@ class Form1_intro(Form1_introTemplate):
         else:
             self.error_label.text = 'Invalid email or password. Please try again.'
 
+  def button_2_click(self, **event_args):
+   open_form("Form2")
+
