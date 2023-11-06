@@ -1,11 +1,11 @@
-from ._anvil_designer import Form1Template
+from ._anvil_designer import Form6Template
 from anvil import *
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 
-class Form1(Form1Template):
+class Form6(Form6Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -13,8 +13,4 @@ class Form1(Form1Template):
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
-    open_form('Form1_intro')
-
-  def button_2_click(self, **event_args):
-    open_form('Admin')
-
+   open_form('Form7')

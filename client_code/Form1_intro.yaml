@@ -32,6 +32,11 @@ components:
     properties: {align: center}
     type: Label
     layout_properties: {grid_position: 'UYOMXE,BTKALH'}
+  - name: button_2
+    properties: {text: next, role: filled}
+    type: Button
+    layout_properties: {grid_position: 'TIJQKC,MRLPRQ'}
+    event_bindings: {click: button_2_click}
 container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: 'theme:Primary Container',
