@@ -38,6 +38,10 @@ components:
     properties: {text: Ravendra}
     type: TextBox
     layout_properties: {grid_position: 'EYITWY,GCGIXO'}
+  - name: text_box_2
+    properties: {text: Ravendra2}
+    type: TextBox
+    layout_properties: {grid_position: 'ELCJWH,VJAAIX'}
 container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: 'theme:Primary Container',
