@@ -22,26 +22,26 @@ class Form7(Form7Template):
 
   def button_2_click(self, **event_args):
       # Create a list to store question-answer pairs
-    question_answers = []
+      question_answers = []
    # Loop through the question and answer inputs
-       for i in range(5):
+      for i in range(5):
            question = self.question_inputs[i].text
            answers = [ans.text for ans in self.answer_inputs[i]]
            question_answers.append((question, answers))
         
 
         # Store the data in the QuizData table
-        for question, answers in question_answers:
+      for question, answers in question_answers:
             app_tables.QuizData.add_row(Question=question, Answers=answers)
 
         # Clear the input fields
-        for question_input in self.question_inputs:
+      for question_input in self.question_inputs:
             question_input.text = ""
-        for answer_input_set in self.answer_inputs:
+      for answer_input_set in self.answer_inputs:
             for answer_input in answer_input_set:
                 answer_input.text = ""
 
-        alert("Quiz questions and answers have been saved to the database.", title="Success")
+      alert("Quiz questions and answers have been saved to the database.", title="Success")
     
         
        
