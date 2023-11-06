@@ -17,9 +17,7 @@ class Form7(Form7Template):
             [self.q4_ans1, self.q4_ans2, self.q4_ans3],
             [self.q5_ans1, self.q5_ans2, self.q5_ans3]
         ]
-
     # Any code you write here will run before the form opens.
-
   def button_2_click(self, **event_args):
       # Create a list to store question-answer pairs
       question_answers = []
