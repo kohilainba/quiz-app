@@ -34,7 +34,7 @@ components:
     - type: RadioButton
       properties: {role: null, selected: false, align: left, tooltip: '', border: '',
         enabled: true, foreground: 'theme:Primary Container', value: '', visible: true,
-        text: '', font_size: null, font: '', spacing_above: small, spacing_below: small,
+        text: H, font_size: null, font: '', spacing_above: small, spacing_below: small,
         italic: false, background: 'theme:On Background', bold: false, group_name: radioGroup1,
         underline: false}
       name: radio_button_1
@@ -42,7 +42,7 @@ components:
     - type: RadioButton
       properties: {role: null, selected: false, align: left, tooltip: '', border: '',
         enabled: true, foreground: 'theme:Primary Container', value: '', visible: true,
-        text: '', font_size: null, font: '', spacing_above: small, spacing_below: small,
+        text: O, font_size: null, font: '', spacing_above: small, spacing_below: small,
         italic: false, background: 'theme:On Background', bold: false, group_name: radioGroup1,
         underline: false}
       name: radio_button_2
@@ -50,7 +50,7 @@ components:
     - type: RadioButton
       properties: {role: null, selected: false, align: left, tooltip: '', border: '',
         enabled: true, foreground: 'theme:Primary Container', value: '', visible: true,
-        text: '', font_size: null, font: '', spacing_above: small, spacing_below: small,
+        text: W, font_size: null, font: '', spacing_above: small, spacing_below: small,
         italic: false, background: 'theme:On Background', bold: false, group_name: radioGroup1,
         underline: false}
       name: radio_button_3
@@ -58,7 +58,7 @@ components:
     - type: RadioButton
       properties: {role: null, selected: false, align: left, tooltip: '', border: '',
         enabled: true, foreground: 'theme:Primary Container', value: '', visible: true,
-        text: '', font_size: null, font: '', spacing_above: small, spacing_below: small,
+        text: A, font_size: null, font: '', spacing_above: small, spacing_below: small,
         italic: false, background: 'theme:On Background', bold: false, group_name: radioGroup1,
         underline: false}
       name: radio_button_4
