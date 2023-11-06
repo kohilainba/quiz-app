@@ -20,9 +20,10 @@ components:
     layout_properties: {grid_position: 'MZIPUG,VMLZBE'}
   - type: Label
     properties: {role: title, align: left, tooltip: '', border: '', foreground: 'theme:On
-        Primary', visible: true, text: '', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: 'theme:On
-        Background', bold: false, underline: false, icon: ''}
+        Primary', visible: true, text: 'What is the symbol for water on the periodic
+        table?', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: 'theme:On Background', bold: false,
+      underline: false, icon: ''}
     name: label_2
     layout_properties: {grid_position: 'DDRRTU,ADKVQX'}
   - type: GridPanel
