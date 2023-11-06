@@ -30,7 +30,7 @@ class Form7(Form7Template):
 
         # Store the data in the QuizData table
       for question, answers in question_answers:
-            app_tables.QuizData.add_row(Question=question, Answers=answers)
+            app_tables.quiz_data.add_row(Question=question, Answers=answers)
 
         # Clear the input fields
       for question_input in self.question_inputs:
