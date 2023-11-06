@@ -1,0 +1,38 @@
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: " ENTRANCE EXAM FOR MCA 2023\n        MICHAEL'S UNIVERSITY",
+      font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '#f0e02d', bold: false, underline: false, icon: 'fa:university'}
+    name: label_1
+    layout_properties: {grid_position: 'MZIPUG,VMLZBE'}
+  - type: GridPanel
+    properties: {}
+    name: grid_panel_1
+    layout_properties: {grid_position: 'JQSBCK,WBUMZE'}
+    components:
+    - name: text_box_1
+      properties: {align: center, placeholder: Email}
+      type: TextBox
+      layout_properties: {row: JCPSAU, width_xs: 4, col_xs: 4}
+    - name: text_box_2
+      properties: {align: center, placeholder: Password}
+      type: TextBox
+      layout_properties: {row: BHQWGY, width_xs: 4, col_xs: 4}
+  - name: button_1
+    properties: {text: submit, role: filled}
+    type: Button
+    layout_properties: {grid_position: 'LHPFSN,AGBEAJ'}
+  - name: label_2
+    properties: {align: center}
+    type: Label
+    layout_properties: {grid_position: 'UYOMXE,BTKALH'}
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: 'theme:Primary Container',
+    border: '', visible: true, role: null, html: '@theme:standard-page.html'}
