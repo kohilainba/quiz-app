@@ -72,6 +72,7 @@ components:
       properties: {text: submit, role: filled}
       type: Button
       layout_properties: {row: WOHJOH, width_xs: 4, col_xs: 4}
+      event_bindings: {click: button_2_click}
 - type: Timer
   properties: {interval: 600}
   name: timer_1
