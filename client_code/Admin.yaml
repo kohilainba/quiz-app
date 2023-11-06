@@ -17,7 +17,7 @@ components:
     layout_properties: {grid_position: 'JQSBCK,WBUMZE'}
     components:
     - type: RepeatingPanel
-      properties: {item_template: ItemTemplate1}
+      properties: {item_template: AdminData}
       name: repeating_panel_1
       layout_properties: {row: BSCVZA, width_xs: 12, col_xs: 0}
 container:

@@ -11,3 +11,6 @@ class Form4(Form4Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+    open_form('Form5')
