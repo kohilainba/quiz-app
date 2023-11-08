@@ -18,7 +18,7 @@ components:
     components: []
   - type: Button
     properties: {role: filled, align: full, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: 'Student
+      foreground: '', visible: true, text: 'Admin
 
         ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
@@ -27,7 +27,7 @@ components:
     event_bindings: {click: button_1_click}
   - type: Button
     properties: {role: filled, align: full, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: 'Admin
+      foreground: '', visible: true, text: 'student
 
         ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
