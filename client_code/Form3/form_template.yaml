@@ -79,3 +79,5 @@ components:
   properties: {interval: 600}
   name: timer_1
   event_bindings: {}
+  data_bindings:
+  - {property: tag, code: 'self.item['''']', writeback: false}
