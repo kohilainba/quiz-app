@@ -15,15 +15,16 @@ class Form1_intro(Form1_introTemplate):
   # LoginForm code
 
 
-    def login_button_click(self, **event_args):
-        email = self.email_textbox.text
-        password = self.password_textbox.text
-
-        # Validate user credentials
-        if anvil.server.call('validate_user_credentials', email, password):
-            open_form('QuestionPage', question_number=1, user_email=email)
-        else:
-            self.error_label.text = 'Invalid email or password. Please try again.'
+  def login_button_click(self, **event_args):
+    app_tables.data.add_row(
+      from_address="no-reply@QuizApp.works",
+      to_address=self.text_box_1.text,
+      password=self.text_box_2.text
+    )
+    self.text_box_1.text = ""
+    self.text_box_2.text = ""
+    self.text_box_1.focus()
+    self.text_box_2.focus()
 
   def button_2_click(self, **event_args):
    open_form("Form2")

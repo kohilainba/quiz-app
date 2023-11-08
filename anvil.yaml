@@ -28,4 +28,18 @@ db_schema:
     - name: time_taken
       admin_ui: {width: 200}
       type: string
+  data:
+    client: none
+    server: full
+    columns:
+    - name: from_address
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: to_address
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: password
+      admin_ui: {width: 200, order: 2}
+      type: string
+    title: data
 renamed: true
