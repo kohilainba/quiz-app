@@ -15,7 +15,7 @@ class Form1_intro(Form1_introTemplate):
   # LoginForm code
 
 
-  def login_button_click(self, **event_args):
+  def login_click(self, **event_args):
     app_tables.data.add_row(
       from_address="no-reply@QuizApp.works",
       to_address=self.text_box_1.text,
@@ -25,7 +25,10 @@ class Form1_intro(Form1_introTemplate):
     self.text_box_2.text = ""
     self.text_box_1.focus()
     self.text_box_2.focus()
+    open_form('Form2')
+    
 
-  def button_2_click(self, **event_args):
-   open_form("Form2")
+  #def button_2_click(self, **event_args):
+   
+   
 

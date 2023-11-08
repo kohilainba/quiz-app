@@ -16,7 +16,7 @@ components:
     name: grid_panel_1
     layout_properties: {grid_position: 'JQSBCK,WBUMZE'}
     components:
-    - name: login
+    - name: text_box_1
       properties: {align: center, placeholder: Email}
       type: TextBox
       layout_properties: {row: JCPSAU, width_xs: 4, col_xs: 4}
@@ -24,19 +24,11 @@ components:
       properties: {align: center, placeholder: Password}
       type: TextBox
       layout_properties: {row: BHQWGY, width_xs: 4, col_xs: 4}
-  - name: button_1
-    properties: {text: submit, role: filled}
+  - name: login
+    properties: {text: submit & next, role: filled}
     type: Button
     layout_properties: {grid_position: 'LHPFSN,AGBEAJ'}
-  - name: label_2
-    properties: {align: center}
-    type: Label
-    layout_properties: {grid_position: 'UYOMXE,BTKALH'}
-  - name: button_2
-    properties: {text: next, role: filled}
-    type: Button
-    layout_properties: {grid_position: 'TIJQKC,MRLPRQ'}
-    event_bindings: {click: button_2_click}
+    event_bindings: {click: login_click}
 container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: 'theme:Primary Container',
