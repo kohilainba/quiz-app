@@ -21,7 +21,7 @@ components:
       type: TextBox
       layout_properties: {row: JCPSAU, width_xs: 4, col_xs: 4}
     - name: text_box_2
-      properties: {align: center, placeholder: Password}
+      properties: {align: center, placeholder: Password, hide_text: true}
       type: TextBox
       layout_properties: {row: BHQWGY, width_xs: 4, col_xs: 4}
   - name: login
